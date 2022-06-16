@@ -1,0 +1,29 @@
+header a.Logo-Nintendo {
+  top: 35px;
+}
+
+.SupportPage-Container {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SupportPage-TitleSearch {
+  text-align: right;
+  font-weight: 100;
+  width: 100%;
+}
+
+.Logo-Nintendo {
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 0 0 15px 15px;
+  display: inline-block;
+  margin-left: 15px;
+  width: 165px;
+  height: 82px;
+}
+
+h1 {
+}

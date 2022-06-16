@@ -1,0 +1,1347 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(72, 72, 72);
+  -webkit-font-smoothing: antialiased;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* Top and Bottom menu/ Navigation*/
+.TopStyles {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.TopMenus {
+  position: flex;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.BottomMenus {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background-color: rgb(255, 255, 255);
+}
+.BottomStyleMenus {
+  display: flex;
+  gap: 1rem;
+  padding: 2px 0px 0px;
+}
+
+.ButtonLink {
+  position: relative;
+  padding: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.ManualTopMenus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
+
+.NintendoHome {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.LinkNintendo {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.Nintendo-Logo {
+  width: 105px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.PickAnChoose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 2.25rem;
+}
+
+.BarInput {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: rgb(114, 114, 114);
+  cursor: pointer;
+  height: 100%;
+  min-width: 300px;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+.BarInput:hover {
+  color: red;
+}
+
+.BarInput span {
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.CategorySelector {
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  min-height: fit-content;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.SelectControl {
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  min-height: fit-content;
+  display: grid;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.SelectItems {
+  margin-right: 2px;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  grid-area: 1/1/2/3;
+  display: grid;
+}
+
+.DropDownList {
+  background: 0;
+  border: 0;
+  caret-color: transparent;
+  font-size: inherit;
+  outline: 0;
+  padding: 0;
+  width: 1px;
+  color: transparent;
+  position: relative;
+  opacity: 0;
+  grid-area: 1/1/2/3;
+}
+
+.ArrowUpAnDown {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.Arrow {
+  margin-right: 10px;
+}
+.Logo-Name {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.TopRightStyles {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+
+  padding: 0px;
+  gap: 1.75rem;
+
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+}
+
+.Support {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.QuestionBox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0.375rem 0px 0px;
+}
+
+.Support {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.ButtonWshLst {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.HeartIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0.375 0px 0px;
+}
+
+.HeartIconTxt {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.CartContainer {
+  display: inline-flex;
+  margin: 0px 0.5rem 0px 0px;
+}
+
+.CartIcon {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  color: inherit;
+}
+
+.ButtonSign {
+  transition: all 200ms ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+}
+
+.SignupIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0.375 0px 0px;
+}
+
+.SignUpTxt {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.Header {
+  position: fixed;
+  display: flex;
+  left: 10;
+  top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 1000;
+  background-color: red;
+  color: white;
+}
+
+/*Bottom Search Stuff Contents */
+.BottomSearchStuff {
+  position: fixed;
+  bottom: 0px;
+  display: block;
+  left: 50%;
+  height: 50px;
+  width: 96%;
+  max-width: 440px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+}
+
+.ManualSearchStuff {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 100px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0.25rem 0.5rem 0px;
+}
+
+.Search-Items {
+  align-items: center;
+  border: none;
+  background: transparent;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.SearchGlass {
+  width: 60px;
+  height: 60px;
+  background: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.CartStyles {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  color: inherit;
+}
+/*Bottom Search Stuff Content*/
+
+#bar {
+  position: relative;
+  width: 50%;
+  left: 10%;
+  bottom: 30px;
+
+  border-top: white;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  min-width: 300px;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+/* Top and Bottom menu/ Navigation */
+#toggleBtn {
+}
+
+.dropdown {
+  margin-top: 10px;
+}
+Button {
+  color: inherit;
+}
+/* Image Layout*/
+@media (min-width: 1024px) {
+  .layout {
+    margin-top: 96px;
+  }
+}
+@media (min-width: 1025px) {
+  .layout {
+    margin-bottom: 4rem;
+  }
+}
+
+.imgStyles {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .CustomStyled {
+    position: absolute;
+    height: calc(100% - 11.4rem);
+  }
+}
+
+.CustomStyled {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(rgb(0, 169, 215), rgb(255, 255, 255)) 0% 0% /
+    cover repeat;
+  background-repeat: repeat;
+}
+
+.CustomLayout {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .ImgPosition {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .ImgWrap {
+    padding-top: 2rem;
+  }
+}
+
+.ImgBorder {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-top: 36.1111%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .ImgBorder {
+    border-radius: 0.25rem;
+  }
+}
+
+.ImgPresent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.DisplayImg {
+  display: block;
+  min-height: 1px;
+  width: 100%;
+  margin-left: 43px;
+}
+/*Image Layout*/
+
+/*Pre Order Layout*/
+@media (min-width: 768px) {
+  .Preorder {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.Preorder {
+  max-width: 90rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .PreorderTag {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.PreorderTag {
+  position: relative;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1025px) {
+  .PreorderStyle {
+    display: grid;
+    gap: 2rem;
+    justify-items: start;
+    grid-template-columns: auto 1fr auto;
+  }
+}
+.PreorderStyle {
+  align-items: center;
+}
+
+@media (min-width: 429px) {
+  .TagStyle {
+    font-size: 1.75rem;
+  }
+}
+.TagStyle {
+  margin-bottom: 0px;
+  line-height: 1.35;
+}
+@media (min-width: 429px) {
+  .PreorderButton {
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+  }
+}
+.PreorderButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  border: unset;
+  white-space: nowrap;
+  transition: all 300ms ease-in-out 0s;
+  border: unset;
+  color: rgb(255, 255, 255);
+}
+.PoButton {
+  order: initial;
+  z-index: 1;
+}
+
+.PreorderButton::before {
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  border-radius: 0.25rem;
+  position: absolute;
+  transition: all 300ms ease-out 25ms;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  display: block;
+  box-sizing: content-box;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  background-color: red;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+/*Pre Order Layout*/
+
+/*Rating Style*/
+@media (min-width: 1025px) {
+  .RatingStyle {
+    justify-self: end;
+  }
+}
+
+.MatureRating {
+  align-items: center;
+  display: grid;
+  column-gap: 0.75rem;
+  grid-template-columns: auto auto;
+}
+.cls-1 {
+  fill: #fff;
+}
+@media (min-width: 429px) {
+  .RatingTxt {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.RatingTxt {
+  display: flex;
+  min-width: 120px;
+  font-weight: 300;
+  padding: 0px;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  color: rgb(72, 72, 72);
+  max-width: 200px;
+}
+
+.TxtStyle:first-child {
+  padding: 0px 0px 0.25rem;
+}
+
+.TxtStyle:not(:last-child) {
+  border-bottom: 1px solid rgb(72, 72, 72);
+}
+/*Rating Style*/
+
+.Divider {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.DividerStyle {
+  margin: 0px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  border-top-style: solid;
+  border-top-color: rgb(218, 218, 218);
+  border-width: 0.0625rem 0px 0px;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+  border-left-style: initial;
+  border-left-color: initial;
+  border-right-style: initial;
+  border-right-color: initial;
+}
+
+hr {
+  height: 0px;
+  color: inherit;
+}
+
+/*Featured List*/
+@media (min-width: 768px) {
+  .FeaturedStyles {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.FeaturedStyles {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .FeaturedTxt {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.FeaturedTxt {
+  max-width: 90rem;
+}
+
+@media (min-width: 429px) {
+  .FeaturedPresent {
+    font-size: 1.75rem;
+  }
+}
+.FeaturedPresent {
+  display: contents;
+}
+/*Featured List*/
+/*Carousal Slider*/
+.Carousal {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.CarousalStyle {
+  position: relative;
+}
+
+.CarousalSlider {
+  overflow: hidden;
+}
+
+/*Card Styles*/
+.Card-Container {
+  border-style: solid;
+  border-color: rgb(223, 215, 215);
+  width: 24.5%;
+  margin-left: 1.8rem;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Card-Wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Card-Alignment {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.Card-Title {
+  font-size: 1rem;
+  margin-left: inherit;
+}
+
+.Card-System {
+  width: 2px;
+  font-weight: 250;
+  font-size: medium;
+  margin-left: inherit;
+  background-color: red;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* img:hover {
+  transform: translateY(-10px);
+} */
+/*Card Styles*/
+
+/*Online Store display*/
+.Online-Store-Wrapper {
+  border-style: solid;
+  border-color: rgb(227, 226, 226);
+  position: relative;
+  width: 100%;
+  padding: 1em;
+}
+
+.Online-Store-Title {
+  display: contents;
+}
+
+.Online-Store-label {
+  border-style: solid;
+  margin: 5px;
+  background-color: red;
+  padding: 2em;
+}
+.Online-Store-Btn-Styling {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: start;
+}
+
+.MyNintendo-Store {
+  width: 100%;
+  color: white;
+}
+.Online-Store-Txt {
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+.RedBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  border: unset;
+  white-space: nowrap;
+  transition: all 300ms ease-in-out 0s;
+  border: unset;
+  color: rgb(255, 255, 255);
+}
+
+.RedBox::before {
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  border-radius: 0.25rem;
+  position: absolute;
+  transition: all 300ms ease-out 25ms;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  display: block;
+  box-sizing: content-box;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  background-color: red;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+
+.Online-Store-ButtonTxt {
+  display: block;
+}
+.Start-Shopping {
+  z-index: 1;
+}
+.WhiteTxt {
+  color: white;
+}
+
+/*Slider*/
+.slider {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+}
+.image {
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 1rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 1rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  display: flex;
+  width: 100%;
+  position: unset;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+  border-style: solid;
+  display: inline-block;
+  height: 71vh;
+  text-align: start;
+  font-size: small;
+  width: 100%;
+}
+/*Slider*/
+.Gaming-Systems-Wrapper {
+  border-color: rgb(227, 226, 226);
+  position: relative;
+  width: 82%;
+
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  gap: 2em;
+}
+
+.GamingSystems-Text-Btn-Styling {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: start;
+}
+
+/*Slider*/
+
+/*Image Display*/
+.ImageDisplay {
+  display: block;
+  width: 1170px;
+  height: auto;
+}
+/*Image Display*/
+
+.News-Wrapper {
+  position: relative;
+  width: 82%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.Article {
+  grid-column: 1 / span 2;
+}
+.Article-Image-Display {
+  grid-column: 1 / span 2;
+}
+
+.Article2 {
+  grid-column: 3 / span 2;
+}
+
+.Article-Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+  height: auto;
+  gap: 2rem;
+}
+
+.Article-CheckitOut {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.CheckitOut-Image {
+  max-width: 100%;
+  height: auto;
+}
+
+.Article-SpanTxt {
+  cursor: pointer;
+  color: red;
+  outline: red;
+  border-bottom: red;
+  font-weight: bold;
+}
+/**/
+
+.Character-Wrapper {
+  display: grid;
+  width: 82%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Character-Title {
+  display: contents;
+}
+
+.Character-Display {
+  display: flex;
+  flex-direction: column;
+}
+
+.Character-Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+.Character-Image1 {
+  width: 200px;
+  height: 208px;
+}
+.Character-Image2 {
+  width: 200px;
+  height: 208px;
+}
+.Character-Image3 {
+  width: 200px;
+  height: 208px;
+}
+.Character-Image4 {
+  width: 200px;
+  height: 208px;
+}
+/**/
+
+.Footer-Title {
+  background-color: red;
+  color: white;
+  display: grid;
+  padding: 2.15rem 1rem;
+  place-items: center end;
+  width: 100%;
+  justify-items: end;
+  grid-template-columns: auto repeat(4, 78px);
+}
+.Footer-Logo1 {
+  justify-self: start;
+}
+.Footer-Links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 1rem;
+  row-gap: 2rem;
+}
+
+.About-NintendoLink {
+  border-left: 1px solid rgb(225, 225, 225);
+  padding-left: 1.5rem;
+}
+
+.About-NintendoLink:first-child {
+  grid-row: span 2 / auto;
+}
+
+.Shop-Link {
+  border-left: 1px solid rgb(225, 225, 225);
+  padding-left: 1.5rem;
+  grid-row: span 2 / auto;
+}
+
+.List-Customs {
+  list-style: none;
+
+  padding: 1rem;
+}
+
+.List-Links {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+/**/
+.Menu-Container {
+  position: relative;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opactiy 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  width: 100%;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}
+
+.Menu-Trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+}
+
+.Menu-Trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Menu-Trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.Menu-Trigger img {
+  border-radius: 90px;
+}
+/**/
+
+.modal {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  width: 360px;
+  height: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: rgb(230, 230, 230);
+  transition: all 200ms ease 0s;
+  justify-content: center;
+  z-index: 1;
+}
+
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  transform: translateY(-81%);
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-content {
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  position: relative;
+}
+
+.modal-header,
+.modal-footer {
+  padding: 10px;
+  background-color: rgb(230, 230, 230);
+}
+
+.modal-title {
+  margin-bottom: 0px;
+  font-size: 1.145rem;
+}
+
+.modal-body {
+  padding-bottom: 6rem;
+
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.modal-wrap {
+  position: relative;
+  padding: 1rem 1.5rem 0.5rem;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.modal-buttons {
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  border: unset;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  font-size: 1.15rem;
+}
+
+.modal-buttons::before {
+  content: "";
+  border-radius: 0.25rem;
+  border-color: red;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: content-box;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.modal-signup {
+  width: 100%;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.modal-login {
+  z-index: 1;
+}
+
+.modal-style {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.modal-orderlink {
+  font-weight: bold;
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid rgb(207, 207, 207);
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.modal-menus {
+}
+
+.mynintendo {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+}
+
+.redeemcode {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+}
+
+.accountsettings {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+}
+
+.modal-liststyling {
+  margin-top: 2rem;
+}
+
+.Digital-Item {
+  background-color: cyan;
+  margin: 15px;
+  font-size: 4em;
+  height: 15vh;
+}
+
+.react-multi-carousel-list {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.react-multi-carousel-track {
+  transform-style: preserve-3d;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  column-gap: 2rem;
+  align-items: center;
+}
+.react-multiple-carousel__arrow {
+  position: absolute;
+  background: rgb(115, 115, 115, 0.5);
+
+  min-width: 50px;
+  min-height: 50px;
+  right: calc(4% + 1px);
+  outline: none;
+  opacity: 2;
+  cursor: pointer;
+  border-width: 0 3px 3px 0;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 20px;
+  color: white;
+  display: block;
+
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  content: "";
+}
+
+.react-multiple-carousel__arrow--left {
+  right: calc(91% + 1px);
+}
+
+.react-multiple-carousel__arrow--right {
+  left: calc(91% + 1px);
+  transform: rotate(-45deg);
+  --webkit-transform: rotate(-45deg);
+}
+
+.react-multiple-carousel__arrow--right ::before {
+  content: "\E825";
+}
+
+.new-container {
+  border-style: solid;
+  display: grid;
+  width: 225px;
+}
+
+.digital-list {
+  display: grid;
+  width: 82%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+}
+
+.react-multi-carousel-item {
+  position: relative;
+  width: 260px;
+}

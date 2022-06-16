@@ -1,0 +1,105 @@
+const costData = [
+  {
+    title: "Soundfall",
+    cost: "$29.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/s/soundfall-switch/hero",
+  },
+  {
+    title: "OPUS: Echo of Starsong - Full Bloom Edition",
+    cost: "$24.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/o/opus-echo-of-starsong-full-bloom-edition-switch/hero",
+  },
+  {
+    title: "Nintendo Switch Sports",
+    cost: "$39.99",
+    system: " Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/n/nintendo-switch-sports-switch/hero",
+  },
+  {
+    title: "Splatoon 2: Octo Expansion",
+    cost: "$19.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/dlc/switch-dlc/splatoon-2-plus-nintendo-switch-online-individual-membership-12-months-dlc/bundles/splatoon-2-octo-expansion/image",
+  },
+  {
+    title: "STAR WARS: The Force Unleased",
+    cost: "$19.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/dlc/switch-dlc/monster-hunter-rise-dlc/individual/monster-hunter-rise-sunbreak/image",
+  },
+  {
+    title: "Nobody Saves the World",
+    cost: "24.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/n/nobody-saves-the-world-switch/hero",
+  },
+  {
+    title: "13 Sentinels: Aegis Rim",
+    cost: "$59.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/1/13-sentinels-aegis-rim-switch/hero",
+  },
+  {
+    title: "Don't Starve Together",
+    cost: "$14.99",
+    system: " Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/d/dont-starve-together-switch/hero",
+  },
+  {
+    title: "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+    cost: "$19.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/c/chrono-cross-the-radical-dreamers-edition-switch/hero",
+  },
+  {
+    title: "LEGO Star Wars: The Skywalker Saga",
+    cost: "$47.99",
+    system: "Nintendo Switch",
+    img: "https://www.nintendo.com/store/products/lego-star-wars-the-skywalker-saga-switch/",
+  },
+  {
+    title: "MLB",
+    cost: "$59.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/x/xenoblade-chronicles-3-switch/hero",
+  },
+  {
+    title: "Kirby and the Forgotten Land",
+    cost: "$59.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/1/13-sentinels-aegis-rim-switch/hero",
+  },
+  {
+    title: "Rune Factory 5",
+    cost: "$59.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/metroid-dread-switch/hero",
+  },
+  {
+    title: "Mario Kart 8 Deluxe - Booster Course Pass",
+    cost: "$24.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/fr_CA/games/switch/l/lego-star-wars-the-skywalker-saga-switch/hero",
+  },
+  {
+    title: "Persona 4 Arena Ultimax",
+    cost: "$24.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/merchandising/feature-banner/Fortnite%20Updates/EN_20BR_Lineup_NintendoOfficialBanners_1920x1080",
+  },
+  {
+    title: "Chocobo GP Lite",
+    cost: "Free",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/p/pokemon-legends-arceus-switch/hero",
+  },
+  {
+    title: "Aztech Forgotten Gods",
+    cost: "$29.99",
+    system: "Nintendo Switch",
+    img: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/merchandising/feature-banner/nso/1920x1080-NSO_EP_20222204",
+  },
+];
+export default costData;
